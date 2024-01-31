@@ -69,15 +69,6 @@ r2 = r2_score(y_test, y_pred)
 print(f'Mean Squared Error: {mse}')
 print(f'R-squared: {r2}')
 
-# Importing SVR from scikit-learn
-from sklearn.svm import SVR
-
-# Creating and training an SVR model
-svr_regressor = SVR(kernel='linear')  # You can explore different kernel options: 'linear', 'poly', 'rbf', etc.
-svr_regressor.fit(x_train, y_train)
-
-# Predicting test set
-y_pred_svr = svr_regressor.predict(x_test)
 
 
 
